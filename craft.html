@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="dist.output.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+
+    <title>What is Bexx knitting?</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logocontainer">
+            <a href="index.html" class="logo">Rebecca Pyne</a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="craft.html">Craft</a></li>
+            <li><a href="saltnames.html">Salts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+        <div>
+My current knitting project: </div>
+<body>
+  <section>
+  <script type="text/javascript" src="//js.ravelry.com/javascripts/dug.js"></script>
+<script id="dugjs-template" type="text/x-dug-template">
+{{#projects}}
+  <div>
+  
+      <a class="rav_title" href="{{url}}">{{name}}<button type="submit" class="bg-teal-500 p-1 text-white rounded-md items-center">Click for more information!</button></a>
+  
+     <a href="#" class="rav_photo"><img src="{{thumbnail.medium}}"></a>
+
+  
+  </div>
+{{/projects}}
+</script>
+<script>
+  dug({
+    cacheExpire: 0,
+    endpoint: "http://api.ravelry.com/projects/BexxP/progress.json?key=3974d7dffe72f0c77a6ec26beeb36d87025fcae9&status=in-progress&notes=false",
+    template: '#dugjs-template'
+  });
+
+</script>
+</section>
+</body>
+
+        
+    
+</body>
+</html>

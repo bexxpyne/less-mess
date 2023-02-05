@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="dist.output.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+
+      <script>
+     function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname + "! Your SaltName is " );
+}
+        </script>
+
+    <title>Find out your Salt Name! </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logocontainer">
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="craft.html">Craft</a></li>
+            <li><a href="saltnames.html">Salts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+<div class = "blurb">
+  Remember in the olden days of the internet you could find out your PornStar Name? Well, here's the chemistry geek version! Simply add your first and second name to the form below and SaltNames will generate a lovely ionic salt name for you. Think of all the uses!
+</div>
+        <div class = "nameInput">
+          <form method="post" onsubmit="confirmInput()" action="">
+            <label for="firstName">First Name: </label><input type="text" placeholder="e.g. Dmitri" class="text-input" id="fname">
+            <label for="lastName">Last Name: </label><input type="text" placeholder="e.g. Mendeleev" class="text-input">
+            <button aria-role="button" type="submit">Find out your Salt Name!</button>
+          </form>
+  Saltnames stuff goes here
+
+        </div>
+        <div class ="blurb">Your Salt Name Is: </div>
+    </section>
+
+
+    
+
+    <script src="js/saltnames.js">
+
+    </script>
+</body>
+</html>
