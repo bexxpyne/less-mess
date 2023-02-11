@@ -8,7 +8,7 @@ let anName = '';
 // Constants that contain HTML elements
 const nameButton = document.getElementById('nameButton');
 const firstNameInput = document.getElementById('firstName');
-const lastNameInput = document.querySelector('.last-name');
+const lastNameInput = document.getElementById('lastName');
 
 
 nameButton.addEventListener('click', function(e) {
@@ -153,5 +153,5 @@ function anionName() {
 }
 anionName (lastLetter)
 
-document.querySelector('#message').textContent = `Hello ${catName} ${anName}`;
+document.querySelector('#message').textContent = `Your Salt Name is ${catName} ${anName}!`;
 })
