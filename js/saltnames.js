@@ -1,62 +1,149 @@
-let firstName = '';
-let lastName = '';
+// Initialise empty variables to store data
+
+let firstName = null;
+let lastName = null;
+let catName = '';
+let anName = '';
+
+// Constants that contain HTML elements
+const nameButton = document.getElementById('nameButton');
+const firstNameInput = document.getElementById('firstName');
+const lastNameInput = document.getElementById('lastName');
+
+
+nameButton.addEventListener('click', function(e) {
+    // prevents default action (submitting form)
+e.preventDefault();
+
+firstName = firstNameInput.value;
 
 
 
-firstName = firstName.charAt(0).toLowerCase()
-function assignCationName() {
-    switch (firstName) {
-            case 'a':return 'Potassium'
+firstLetter = firstName.charAt(0).toLowerCase();
+
+
+function cationName() {
+    switch (firstLetter) {
+            case 'a' : catName='Potassium'
             break;
-            case 'b':return 'Sodium'
+            case 'b': catName='Sodium';
             break;
-            case 'c':return 'Iron (II)'
+            case 'c': catName='Iron (II)';
             break;
-            case 'd':return 'Iron (III)'
+            case 'd': catName='Iron (III)';
             break;
-            case 'e':return 'Chromium (III)'
+            case 'e': catName='Chromium (III)';
             break;
-            case 'f':return 'Lithium'
+            case 'f': catName='Lithium';
             break;
-            case 'g':return 'Caesium'
+            case 'g': catName='Caesium';
             break;
-            case 'h':return 'Rubidium'
+            case 'h': catName='Rubidium';
             break;
-            case 'i':return 'Calcium'
+            case 'i': catName='Calcium';
             break;
-            case 'j':return 'Magnesium'
+            case 'j': catName='Magnesium';
             break;
-            case 'k':return 'Copper (I)'
+            case 'k': catName='Copper (I)';
             break;
-            case 'l':return 'Copper (II)'
+            case 'l': catName='Copper (II)';
             break;
-            case 'm':return 'Silver'
+            case 'm': catName='Silver';
             break;
-            case 'n':return 'Zinc'
+            case 'n': catName='Zinc';
             break;
-            case 'o':return 'Nickel'
+            case 'o': catName='Nickel';
             break;
-            case 'p':return 'Manganese (II)'
+            case 'p': catName='Manganese (II)';
             break;
-            case 'q':return 'Aluminium'
+            case 'q': catName='Aluminium';
             break;
-            case 'r':return 'Titanium'
+            case 'r': catName='Titanium';
             break;
-            case 's':return 'Ammonium'
+            case 's': catName='Ammonium';
             break;
-            case 't':return 'Platinum'
+            case 't': catName='Platinum';
             break;
-            case 'u':return 'Cobalt'
+            case 'u': catName='Cobalt';
             break;
-            case 'v':return 'Hydrogen'
+            case 'v': catName='Hydrogen';
             break;
-            case 'w':return 'Barium'
+            case 'w': catName='Barium';
             break;
-            case 'x':return 'Lead (II)'
+            case 'x': catName='Lead (II)';
             break;
-            case 'y':return 'Tin (II)'
+            case 'y': catName='Tin (II)';
             break;
-            case 'z':return 'Strontium'
+            case 'z': catName='Strontium';
+            break;
+            
+        default:
+            break;
+            
+    }}
+    cationName (firstLetter)
+
+
+
+
+
+lastName = lastNameInput.value;
+lastLetter = lastName.charAt(0).toLowerCase();
+
+function anionName() {
+
+    switch (lastLetter) {
+            case 'a': anName = 'Fluoride'
+            break;
+            case 'b': anName = 'Chloride'
+            break;
+            case 'c': anName = 'Bromide'
+            break;
+            case 'd': anName = 'Iodide'
+            break;
+            case 'e': anName = 'Oxide)'
+            break;
+            case 'f': anName = 'Chlorate'
+            break;
+            case 'g': anName = 'Chlorite'
+            break;
+            case 'h': anName = 'Nitride'
+            break;
+            case 'i': anName = 'Sulphide'
+            break;
+            case 'j': anName = 'Sulphate'
+            break;
+            case 'k': anName = 'Sulphite'
+            break;
+            case 'l': anName = 'Chromate'
+            break;
+            case 'm': anName = 'Dichromate'
+            break;
+            case 'n': anName = 'Acetate'
+            break;
+            case 'o': anName = 'Cyanide'
+            break;
+            case 'p': anName = 'Peroxide'
+            break;
+            case 'q': anName = 'Oxalate'
+            break;
+            case 'r': anName = 'Thiosulphate'
+            break;
+            case 's': anName = 'Arsenate'
+            break;
+            case 't': anName = 'Hydroxide'
+            break;
+            case 'u': anName = 'Manganate (VII)'
+            break;
+            case 'v': anName = 'Hydride'
+            break;
+            case 'w': anName = 'Nitrate'
+            break;
+            case 'x': anName = 'Nitrite'
+            break;
+            case 'y': anName = 'Nitride)'
+            break;
+            case 'z': anName = 'Carbonate'
             break;
             
         default:
@@ -64,71 +151,7 @@ function assignCationName() {
     }
     
 }
-assignCationName();
+anionName (lastLetter)
 
-
-
-lastName = lastName.charAt(0).toLowerCase()
-function assignAnionName() {
-    switch (lastName) {
-            case 'a':return 'fluoride'
-            break;
-            case 'b':return 'chloride'
-            break;
-            case 'c':return 'Bromide'
-            break;
-            case 'd':return 'Iodide'
-            break;
-            case 'e':return 'Oxide)'
-            break;
-            case 'f':return 'Chlorate'
-            break;
-            case 'g':return 'Chlorite'
-            break;
-            case 'h':return 'Nitride'
-            break;
-            case 'i':return 'Sulphide'
-            break;
-            case 'j':return 'Sulphate'
-            break;
-            case 'k':return 'Sulphite'
-            break;
-            case 'l':return 'Chromate'
-            break;
-            case 'm':return 'Dichromate'
-            break;
-            case 'n':return 'Acetate'
-            break;
-            case 'o':return 'Cyanide'
-            break;
-            case 'p':return 'Peroxide'
-            break;
-            case 'q':return 'Oxalate'
-            break;
-            case 'r':return 'Thiosulphate'
-            break;
-            case 's':return 'Arsenate'
-            break;
-            case 't':return 'Hydroxide'
-            break;
-            case 'u':return 'Manganate (VII)'
-            break;
-            case 'v':return 'Hydride'
-            break;
-            case 'w':return 'Nitrate'
-            break;
-            case 'x':return 'Nitrite'
-            break;
-            case 'y':return 'Nitride)'
-            break;
-            case 'z':return 'Carbonate'
-            break;
-            
-        default:
-            break;
-    }
-    
-}
-assignAnionName ()
-
-console.log(`Your salt name is ${assignCationName()} ${assignAnionName()}!`)
+document.querySelector('#message').textContent = `Your Salt Name is ${catName} ${anName}!`;
+})

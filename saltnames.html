@@ -6,56 +6,57 @@
    
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out your Salt Name! </title>
+    
     <link rel="stylesheet" href="styles/tailwind.css">
     <link rel="stylesheet" href="dist.output.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Merriweather:wght@300&display=swap" rel="stylesheet">
 
-      <script>
-     function confirmInput() {
-  fname = document.forms[0].fname.value;
-  alert("Hello " + fname + "! Your SaltName is " );
-}
-        </script>
 
-    <title>Find out your Salt Name! </title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="logocontainer">
-          </div>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="craft.html">Craft</a></li>
-            <li><a href="saltnames.html">Salts</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-<div class = "blurb">
+  <header>
+    <nav class="navbar">
+      <div class="logocontainer">
+        <a href="index.html" class="logo">Rebecca Pyne</a>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="craft.html">Craft</a></li>
+        <li><a href="saltnames.html">Salts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class = "saltBlurb">
+  <p>
   Remember in the olden days of the internet you could find out your PornStar Name? Well, here's the chemistry geek version! Simply add your first and second name to the form below and SaltNames will generate a lovely ionic salt name for you. Think of all the uses!
+</p>
 </div>
-        <div class = "nameInput">
-          <form method="post" onsubmit="confirmInput()" action="">
-            <label for="firstName">First Name: </label><input type="text" placeholder="e.g. Dmitri" class="text-input" id="fname">
-            <label for="lastName">Last Name: </label><input type="text" placeholder="e.g. Mendeleev" class="text-input">
-            <button aria-role="button" type="submit">Find out your Salt Name!</button>
-          </form>
-  Saltnames stuff goes here
+<div id="saltsIntro" class="contact">
 
+  <div class = "saltBlurb">
+    <label class="formLabel">First name: </label>
+    <input type="text" id="firstName" required placeholder="Type your first name here" size="40" class="w-500px border border-teal-500 rounded-md p-1">
+                
+  </div>
+  <div class = "saltBlurb">
+    <label class=""formLabel>Last Name:</label>
+    <input type="text" id="lastName" required placeholder="Type your last name here" size="40" class="w-500px border border-teal-500 rounded-md p-1">
         </div>
-        <div class ="blurb">Your Salt Name Is: </div>
-    </section>
+ </div>
+ 
+        <div class="saltBlurb">
+        
+          <button type="submit" id="nameButton" class="bg-teal-500 p-1.5 m-1 text-white rounded-md"> Click Me!  </button>
+        </div>  
+       <div class="saltBlurb"> <h1 id="message"> </h1></div>
 
+    <script src="js/saltnames.js"></script>
 
-    
-
-    <script src="js/saltnames.js">
-
-    </script>
 </body>
 </html>
